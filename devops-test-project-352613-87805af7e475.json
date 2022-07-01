@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "devops-test-project-352613",
+  "private_key_id": "87805af7e47575d8a705a292a35aad4791c1c018",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+kC+JeiLv2jRC\neJ9bhIBSkbVdhjr8YPsIFRlOq0MaGTcc+aW4la3URtqi7jBJfrriWuO/1FNpTeXJ\nMsEdshPQovT9wYHr11RI3fJfxTjUkNUsExs0tTBeeHyUEKiU4bKmxOFMggo+I+RF\nFs6uZQjNmktQB3Tk5XHXh9Hqea7/5Dd0qwkiUfZH4uST3KmJTwjWCfTujV0V7K39\nRpFeaekw0GyUEy9PAgNy5PO6VCPuhlGnGEgfl/H4ALfgFn004clGSKlLiicdAtI5\n5ka1aO4ufKi15X3rqWrdr+n3cT6qIhRIDjOEbER4QlPNC+GGe9tBzASOpJkjL4ai\nEHW6v4hpAgMBAAECggEAOK5/jUdYe/pt//WMBPc5ChZQGYTzJ52bHZDVCbrURz+H\nzqUNH4XaAiGfJ8Zsc3fwE6MQSj9YHiLu/fUMTw5oaW8HKzFzORi/97qYvNbXbBa2\naZk3Ruq7++WfvJTl5/7oGkXGc/DcJhab79b0XBguUaWa0C+fm/QJdB/wluth27fc\n+dtD83cn/Of3yxMKNl3yBG+KU59f3Hsv7RocWYH1+maTmJ9j1OLuPNDPwOfLogaf\nUp4tWuQXGBnkOU4PIVy6ZXeHMF2n2XzSt31QW8WRUX9oyKERZMduwmiS5tPfcNVt\n+VXjIJC0C1c1pqqHhm6d4XtMLE2gOXGP9joSSp4hjwKBgQDsa8GOIibgMpkEXZCx\nmiqHuCo70IPS2nlokqs8JgjEZNHII9y4FUtF7pnQLcPqSyLoPu1YHjougDOpFKDs\nqLxwtpRUZRysFbOUF/Sl9qduX7+FO2vamHVyl9qZ+Mg1nzfs8aRZjqTlQXiQWurd\nS0BrwYK0GIXMI7O70WlNzLag3wKBgQDOWDkcxyUtXcz7ezmtd5F/77LxsmnBjG6E\ntIKIW2FaorzrnUOmxLFINptpLobhfPWDguYrSp7a+rad02GLfGHPwAbZIit5MCf6\n7Cix4B7CVG6dfHXKMxAz5ZSGfwwhWSxlnYc6v3HpA30q86+j80o+uAZ5V4EcZYvV\nvn8pE5GXtwKBgQCQ6/jI1Jx5/+oWZ/hjNfpuGXEiG05DORMFDCsVAseLA7Yodfs9\niCgNJRZ6KyOWAhrSvIgm5NiLWqDQO0nt5/0jJnhER3rM7byXwhuAhHLb0KuI0wTp\nCV2tMfKZQYwQepoAj5tMHolr0rdB3clsf01tAEDLfuC9YwEw10wymZM1hwKBgAGm\nWu6L+RQfx9/K4G8uoY8wT3H3Rzkw8kFFYDXO5TxgSLppi3zt3a0CIsP4h0OOSDhA\n964o7pQ5pPQmGIWQ/Qc4NdXOnCJf7DHpaXninNxY6HmB4T84oUyI7WMV6PbrS5uU\nYtxpY3PFf160jBb3fwR5XDPkKzga579RwpqFeYiJAoGBAMP0+1rCmVlWNz+El5tB\n3+yvERCA3EDFQF9gKpI63KNf0N0Y5BRJpIw4bTEOo6i89l54cfWSWg299m0nly9D\nJqSN0J0Gvb10FoGiOK3pmfRzlPDSxCEWlm9Fmilw2ASWuvd+9ArmkClTXL15ref8\ngjkjuDyWWzl+NfK9aTHNjnXy\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@devops-test-project-352613.iam.gserviceaccount.com",
+  "client_id": "100695218572806535654",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40devops-test-project-352613.iam.gserviceaccount.com"
+}

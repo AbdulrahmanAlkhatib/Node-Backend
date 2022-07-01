@@ -5,6 +5,10 @@ on:
     branches: ['**']
 
 jobs:
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 5128598f77883da0dce9df45b85e7b2b1c29d7ef
   test:
     runs-on: ubuntu-latest
 
@@ -27,6 +31,7 @@ jobs:
       env:
         CI: true
 
+<<<<<<< HEAD
   build-push-gar:
     needs: test
     name: Build and push to GCP
@@ -38,10 +43,19 @@ jobs:
       HOST: https://europe-west4-docker.pkg.dev
       JSON_KEY: ${{ secrets.SA_KEY }}
     
+=======
+  build-push-gcr:
+    name: Build and push to GCP
+    runs-on: ubuntu-latest
+    env: 
+      IMAGE_NAME: backend-image
+      PROJECT_ID: devops-test-project-352613
+>>>>>>> 5128598f77883da0dce9df45b85e7b2b1c29d7ef
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
         
+<<<<<<< HEAD
       - name: auth
         run: |
           echo $JSON_KEY | docker login -u $USERNAME --password-stdin $HOST
@@ -58,3 +72,28 @@ jobs:
           docker tag $IMAGE_NAME:latest europe-west4-docker.pkg.dev/$PROJECT_ID/node-release/$IMAGE_NAME:$GIT_TAG
           docker push europe-west4-docker.pkg.dev/$PROJECT_ID/node-release/$IMAGE_NAME:latest
           docker push europe-west4-docker.pkg.dev/$PROJECT_ID/node-release/$IMAGE_NAME:$GIT_TAG
+=======
+      - uses: google-github-actions/setup-gcloud@master
+        with: 
+          service-account-key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          project_id: ${{ env.PROJECT_ID }}
+          export_default_credintials: true
+          
+      - name: build docker image
+        run: docker build -t $IMAGE_NAME:latest
+      
+      - name: configure docker client
+        run: |- 
+          gcloud auth configure-docker --quiet
+      
+      - name: push docker image to container registry (GCR)
+        env: 
+          GIT_TAG: v0.1.0
+          
+        run: |-
+          docker tag $IMAGE_NAME:latest gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
+          docker tag $IMAGE_NAME:latest gcr.io/$PROJECT_ID/$IMAGE_NAME:GIT_TAG
+          docker push gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
+          docker push gcr.io/$PROJECT_ID/$IMAGE_NAME:GIT_TAG
+    
+>>>>>>> 5128598f77883da0dce9df45b85e7b2b1c29d7ef
